@@ -13,5 +13,5 @@ jobs:
   fabiosilva-esposito:
     runs-on: ubuntu-latest
     steps:
-      - run: cd ../javademo
+      - run: cd ../javademo/my-app
       mvn install
