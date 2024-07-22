@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "mercato lazio"
+
   fabiosilva-esposito:
     runs-on: ubuntu-latest
     steps:
@@ -22,5 +23,6 @@ jobs:
       - run: mvn -v
       - uses: actions/checkout@v4
       - run: ls -la
-      - run: cd ../javademo/my-app
-             mvn install
+      - run: | 
+          cd javademo/my-app
+          mvn install
