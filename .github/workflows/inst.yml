@@ -13,5 +13,14 @@ jobs:
   fabiosilva-esposito:
     runs-on: ubuntu-latest
     steps:
+    - name: Set up JDK for x64
+        # https://github.com/actions/setup-java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21.0.2'
+          distribution: 'temurin'
+      - run: mvn -v
+      - uses: actions/checkout@v4
+      - run: ls -la
       - run: cd ../javademo/my-app
-      mvn install
+             mvn install
