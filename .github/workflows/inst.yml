@@ -1,0 +1,12 @@
+name: thiaw
+run-name: ciao da ${{ github.actor }} 
+on: [push]
+jobs:
+  cheadams-sanabria-zapata:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "edera orgoglio granata"
+  noslin-tchaouna-tavares:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "mercato lazio"
