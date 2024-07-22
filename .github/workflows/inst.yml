@@ -10,3 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "mercato lazio"
+  fabiosilva-esposito:
+    runs-on: ubuntu-latest
+    steps:
+      - run: cd ../javademo
+      mvn install
